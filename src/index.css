@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1b1a18;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Album-container {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+.Songs-container {
+  display: grid;
+  grid-template-columns: 50% 50%; 
+}
+
+.Album-container-recent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.Recent-container {
+  float: left;
+  padding: 20px;
+  width: 150px;
+  word-wrap: break-word;
+}
+
+.music-content {
+  padding: 10px;
+  float:left;
+}
+
+.music-content img {
+  border-radius: 20px;
+  float:left; 
+}
+
+.music-content h2 {
+  font-size: 30px;
+}
+
+.music-content h3 {
+  font-size:15px;
+  font-style:italic;
+  color:gray;
+}
+
+.music-content h4 {
+  font-family: 'Courier New', Courier, monospace;
+  color: darkgrey;
+}
+
+.music-content p {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.music-info {
+  text-align: left;
+  float:left;
+  margin: 0px 0px 0px 20px;
+  line-height: 0.9;
+  width:50%;
+  display:flex;
+  flex-direction: column;
+}
+
+.music-info > * {
+  margin:10px 0px;
+}
+
+.Recent-search {
+  clear: left;
+}
+
+.login-content button, .btn-select, .playlist-button button {
+  color: #fff;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.login-content button {
+  background-color: #14f732;
+}
+
+.login-content button:hover {
+  background-color: #85e408;
+}
+
+.search-content h2 {
+  font-style: italic;
+  font-size:20px;
+}
+
+.btn-select {
+  background-color: #14f732;
+}
+
+.btn-select:hover {
+  background-color: #85e408;
+}
+
+.playlist {
+  border: 1px solid rgb(8, 204, 230);
+  border-radius: 100px;
+  padding:25px;
+  width:30%;
+  min-width: 275px;
+  margin: 25px auto 25px auto;
+}
+
+.playlist-form input, .playlist-form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid rgb(8, 204, 230);
+  border-radius: 100px;
+  width: 190px;
+}
+
+.playlist-button button {
+  background-color: rgb(8, 204, 230);
+  margin-bottom:15px;
+}
+
+.playlist-form label {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+  text-align: left;
+  margin:10px 0;
+}
+
+.input-group__error {
+  color:rgb(252, 69, 69);
+}
+
+.homepage{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+@media(max-width:670px) {
+  .Album-container {
+    width: 95%;
+  }
+  .Songs-container {
+    grid-template-columns: 100%; 
+  }
+  .music-content {
+    width: 100%;
+  }
+  .music-info {
+    word-wrap: break-word;
+    max-width: 10em;
+  }
+  .playlist {
+    width:80%;
+    min-width: none;
+  }
+  .Album-container-recent {
+    flex-wrap: wrap;
+    width: 100%
+  }
+}
